@@ -1,0 +1,68 @@
+<div class="row">
+  <div class="col-md-12 text-center">
+    <h2> Edit Student</h2>
+  </div>
+  <div class="row">
+    <form [formGroup]="addStudent" novalidate class="form">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">Id</div>
+        <div class="col-md-4">
+          <input type="text" formControlName="Id" class="form-control">
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">Name</div>
+        <div class="col-md-4">
+          <input type="text" formControlName="Name" class="form-control">
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">Role</div>
+        <div class="col-md-4">
+          <input type="text" formControlName="Role" class="form-control">
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">Email</div>
+        <div class="col-md-4">
+          <input type="email" formControlName="Email" class="form-control">
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">Contact</div>
+        <div class="col-md-4">
+          <input type="number" formControlName="Contact" class="form-control">
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">password</div>
+        <div class="col-md-4">
+          <input type="text" formControlName="password" class="form-control">
+        </div>
+        <div class="col-md-2"></div>
+
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+          <button type="submit" (click)="onSubmit()" class="btn btn-success">Update student</button>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
